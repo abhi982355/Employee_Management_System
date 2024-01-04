@@ -141,9 +141,5 @@ This project is an Employee Management System that utilizes a Restful web servic
    
 
 
-## 🔗 Links
-
-[![twitter](https://logosmarcas.net/wp-content/uploads/2020/12/GitHub-Logo.png)](https://github.com/abhi982355/Employee_Management_System)
-
-# 
+## 🔗 Links 
  [![linkedin](https://tse1.mm.bing.net/th?id=OIP.62i4eBWqqrpmIaqY0uOL9QHaHa&pid=Api&P=0&h=220)](https://www.linkedin.com/in/abhishek-raut-7a1890237/)
