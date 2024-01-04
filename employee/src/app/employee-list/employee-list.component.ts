@@ -13,6 +13,8 @@ export class EmployeeListComponent implements OnInit {
   constructor(private api:ServiceService , private router:Router) { }
 
   employee:Employee[]=[];
+  display:string='none';
+  deleteuser:string='none';
 
   ngOnInit(): void {
   this.getEmployees();
@@ -32,6 +34,16 @@ export class EmployeeListComponent implements OnInit {
     this.api.deleteEmployeeById(id).subscribe(data=>{
       console.log(data);
       this.getEmployees();
+      this.deleteuser='none';
+      
     })
+  }
+
+  delete(){
+    this.deleteuser='block';
+  }
+
+  closedelete(){
+    this.deleteuser='none';
   }
 }

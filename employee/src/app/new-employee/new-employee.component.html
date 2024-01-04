@@ -28,7 +28,8 @@
                 <!-- Email ID -->
                 <div class="mb-6">
                     <label for="email" class="block text-sm font-medium text-gray-600">Email ID</label>
-                    <input type="email" [(ngModel)]="employee.email" id="email" name="email" class="mt-1 p-2 w-full border rounded-md">
+                    <input type="email" [(ngModel)]="employee.email"  name="email" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" nk="isDisabled" required  #inputemail="ngModel" [class.is-invalid]="inputemail.touched && inputemail.invalid" class="mt-1 p-2 w-full border rounded-md">
+                    <small class="text-danger" *ngIf="inputemail.touched && inputemail.invalid">Please enter valid email Id <i>(use @gmail.com)</i></small>
                 </div>
     
                 <!-- Submit Button -->

@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.employee.Enitity.Classes.Employee;
 import com.employee.Repository.EmployeeRepo;
 
-@RestController
+@RestController             // @RequestBody + @ Controller = @RestController  
 @RequestMapping("/emp")
 @CrossOrigin("*")
 public class EmployeeController {
@@ -37,7 +37,7 @@ public class EmployeeController {
    public List<Employee> getAllEmployees(){
 	   return this.employeeRepo.findAll();
    }
-   
+   	
    // create new employee
    
    // http://localhost:8080/emp/save
